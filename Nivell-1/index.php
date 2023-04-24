@@ -5,7 +5,7 @@ class Employee{
 private $name;
 private $salary;
 
-public function __construct($name,$salary){
+public function initialize($name,$salary){
     $this->name= $name;
     $this->salary= $salary;
 }
@@ -21,15 +21,18 @@ public function print(){
 
 //Testing Exercici 1
 
-$employeeOne = new Employee("Gabriela", 6500);
+$employeeOne = new Employee;
+$employeeOne -> initialize("Gabriela",6000);
 echo $employeeOne->print();
 echo "</br>";
 
-$employeeTwo = new Employee("Julio", 6000);
+$employeeTwo = new Employee;
+$employeeTwo -> initialize("Julio", 6500);
 echo $employeeTwo->print();
 echo "</br>";
 
-$employeeThree = new Employee("Thiago", 500);
+$employeeThree = new Employee;
+$employeeThree -> initialize("Thiago", 500);
 echo $employeeThree->print();
 echo "</br>";
 
