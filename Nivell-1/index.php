@@ -72,4 +72,13 @@ echo "El área del Rectángulo 1 es:  ";
 $rectangleOne->area();
 echo "</br>";
 
+$triangleTwo = new Triangle(4, 10);
+echo "El área del Triángulo 2 es:  ";
+$triangleTwo->area();
+echo "</br>";
+
+$rectangleTwo = new Rectangle(50, 10);
+echo "El área del Rectángulo 2 es:  ";
+$rectangleTwo->area();
+echo "</br>";
 ?>
