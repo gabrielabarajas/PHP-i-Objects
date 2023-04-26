@@ -1,5 +1,4 @@
 <?php
-
 //Exercici 1
 class Employee{
 private $name;
