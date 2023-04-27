@@ -1,5 +1,4 @@
 <?php
-
 class PokerDice{
     private $faceFigure = array("As","K","Q","J","7","8"); 
 
@@ -10,6 +9,20 @@ class PokerDice{
     public function shapeName($num){
         return $name = $this->faceFigure[$num];  
     }
+}
+
+class throws{
+    private $numberDices;
+    private $numberThrows;
+
+public function __construct($dices,$throws)
+{
+    $this->numberDices = $dices;
+    $this->numberThrows = $throws;
+}
+public function getTotalThrows(){
+    return $totalThrows = $this->numberDices * $this->numberThrows;
+}
 }
 
 function throwFive(){
@@ -37,8 +50,17 @@ function throwFive(){
     $rand5 = $dice5->throw();
     $shape5= $dice5->shapeName($rand5);
     echo $shape5;
+
+    echo "</br>";
 } 
 
 throwFive();
+throwFive();
+throwFive();
+
+$play1= new throws(5,3);
+$totalThrows = $play1->getTotalThrows();
+
+echo "Numero de tiradas entre todos los dados son:  ".$totalThrows;
 
 ?>
