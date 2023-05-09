@@ -47,18 +47,16 @@ class Shape{
 }
 
 class Triangle extends Shape{
-    private $area;
 
     public function area(){
-        echo $this->area = ($this->width * $this->height)/2;
+        echo ($this->width * $this->height)/2;
     }
 }
 
 class Rectangle extends Shape{
-    private $area;
 
     public function area(){
-        echo $this->area = ($this->width * $this->height);
+        echo ($this->width * $this->height);
     }
 }
 
